@@ -1,4 +1,4 @@
-* ---------- CUSTOM PROPERTIES ----------*/
+/* ---------- CUSTOM PROPERTIES ----------*/
 :root {
     --clr-white: #E6E3DB;
     --clr-black: #49306B;
@@ -30,11 +30,14 @@ img {
 
 body {
     font-family: 'Source Code Pro', monospace;
-    font-size: clamp(1.2rem, 0.5947rem + 2.5825vw, 3.5rem);
+    font-size: clamp(1.2rem, 0.7263rem + 2.0211vw, 3rem);
     font-weight: 400;
     line-height: 1.2;
     color: #E6E3DB;
-    background-color: #49306B;
+}
+
+body, header {
+    background: linear-gradient(to right, #2F1651, #49306B, #2F1651);
 }
 
 blockquote:before, blockquote:after,
@@ -45,8 +48,7 @@ q:before, q:after {
 
 /* ---------- TYPOGRAPHY ----------*/
 h1 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1em 0;
     font-family: 'Open Sans', sans-serif;
     font-size: clamp(2rem, 0.9474rem + 4.4912vw, 6rem);
     font-weight: 600;
@@ -62,7 +64,6 @@ h1 {
     font-weight: 600;
     color: #F78463;
 }
-
 
 .author {
     display: block;
@@ -82,8 +83,9 @@ header {
     opacity: .96;
     backdrop-filter: blur(100px);
 }
+
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
@@ -92,7 +94,7 @@ header {
 }
 
 .quotes {
-    margin-top: 6em;
+    margin-top: 7em;
 }
 
 blockquote {
@@ -156,3 +158,12 @@ blockquote {
         margin-top: 6.5em;
     }
 }
+
+/* @media (min-width: 1000px) {
+    h1 {
+        margin: .75em 0;
+    }
+    .quotes {
+        margin-top: 4em;
+    }
+} */
