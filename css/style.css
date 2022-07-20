@@ -50,6 +50,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: clamp(2rem, 0.9474rem + 4.4912vw, 6rem);
     font-weight: 600;
+    letter-spacing: .3rem;
     text-transform: uppercase;
     text-align: center;
     background: -webkit-linear-gradient(130deg, #923F76, #CF5971, #F78463, #FFBC5B);
@@ -141,5 +142,17 @@ blockquote {
 @media (max-width: 850px) {
     .container {
         width: 90vw;
+    }
+}
+
+@media (max-width: 580px) {
+    h1 {
+        letter-spacing: normal;
+    }
+}
+
+@media (max-width: 400px) {
+    .quotes {
+        margin-top: 6.5em;
     }
 }
