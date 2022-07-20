@@ -49,6 +49,7 @@ h1 {
     margin-bottom: 1em;
     font-size: clamp(2rem, 0.9474rem + 4.4912vw, 6rem);
     font-weight: 600;
+    text-transform: uppercase;
     text-align: center;
     background: -webkit-linear-gradient(130deg, #923F76, #CF5971, #F78463, #FFBC5B);
     -webkit-background-clip: text;
@@ -60,12 +61,9 @@ span {
     color: #F78463;
 }
 
-.quotes {
-    max-width: 40ch;
-}
 
 footer {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     text-align: right;
     color: #E8D5B5;
     margin-top: .25em;
@@ -81,8 +79,8 @@ header {
     backdrop-filter: blur(100px);
 }
 .container {
-    max-width: 768px;
-    margin: 2em auto;
+    max-width: 800px;
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,4 +135,8 @@ blockquote {
 }
 
 /* ---------- MEDIA QUERIES ----------*/
-
+@media (max-width: 850px) {
+    .container {
+        width: 90vw;
+    }
+}
