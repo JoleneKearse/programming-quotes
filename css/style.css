@@ -1,0 +1,140 @@
+* ---------- CUSTOM PROPERTIES ----------*/
+:root {
+    --clr-white: #E6E3DB;
+    --clr-black: #49306B;
+    --gap: 1em;
+    --gap-lg: 3em;
+}
+/* ---------- RESET ----------*/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, div, span, h1, p, blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(1.2rem, 0.5947rem + 2.5825vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: #E6E3DB;
+    background-color: #49306B;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* ---------- TYPOGRAPHY ----------*/
+h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: clamp(2rem, 0.9474rem + 4.4912vw, 6rem);
+    font-weight: 600;
+    text-align: center;
+    background: -webkit-linear-gradient(130deg, #923F76, #CF5971, #F78463, #FFBC5B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span {
+    font-weight: 600;
+    color: #F78463;
+}
+
+.quotes {
+    max-width: 40ch;
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    color: #E8D5B5;
+    margin-top: .25em;
+}
+
+/* ---------- LAYOUT ----------*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #49306B;
+    opacity: .96;
+    backdrop-filter: blur(100px);
+}
+.container {
+    max-width: 768px;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes {
+    margin-top: 6em;
+}
+
+blockquote {
+    margin-bottom: 1em;
+}
+
+/* ---------- COMPONENTS ----------*/
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    margin-inline: auto;
+    border-radius: 50%;
+    background-color: #F78463;
+}
+
+.loader div {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    /* background-color: #F78463; */
+    animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.loader div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+}
+
+.loader div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+}
+
+.loader div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+/* ---------- MEDIA QUERIES ----------*/
+
