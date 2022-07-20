@@ -57,13 +57,14 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-span {
+.number {
     font-weight: 600;
     color: #F78463;
 }
 
 
-footer {
+.author {
+    display: block;
     font-family: 'Shadows Into Light', cursive;
     text-align: right;
     letter-spacing: .3rem;

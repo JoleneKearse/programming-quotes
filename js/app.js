@@ -25,9 +25,9 @@
             quoteEl.classList.add("quote");
 
             quoteEl.innerHTML = `
-            <span>${quote.id} >_</span>
+            <span class="number">${quote.id} >_</span>
             ${quote.quote}
-            <footer>${quote.author}</footer>
+            <span class="author">${quote.author}</span>
         `;
 
             quotesEl.appendChild(quoteEl);
