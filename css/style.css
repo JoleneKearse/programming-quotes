@@ -29,7 +29,7 @@ img {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     font-size: clamp(1.2rem, 0.5947rem + 2.5825vw, 3.5rem);
     font-weight: 400;
     line-height: 1.2;
@@ -47,6 +47,7 @@ q:before, q:after {
 h1 {
     margin-top: 1em;
     margin-bottom: 1em;
+    font-family: 'Open Sans', sans-serif;
     font-size: clamp(2rem, 0.9474rem + 4.4912vw, 6rem);
     font-weight: 600;
     text-transform: uppercase;
@@ -65,6 +66,7 @@ span {
 footer {
     font-family: 'Shadows Into Light', cursive;
     text-align: right;
+    letter-spacing: .3rem;
     color: #E8D5B5;
     margin-top: .25em;
 }
